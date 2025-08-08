@@ -10,7 +10,20 @@ st.set_page_config(page_title="Wikipedia Chatbot", page_icon="📖")
 st.title("Hey I'm V7chatBot")
 
 # --- Sidebar ---
-st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=100)
+admin_photo_url = "https://i.postimg.cc/pdSJ0TrN/Whats-App-Image-2025-07-30-at-14-39-16-7e12e87a.jpg"
+
+# Circular Admin Photo
+st.sidebar.markdown(
+    f"""
+    <div style="display: flex; justify-content: center;">
+        <img src="{admin_photo_url}" 
+             style="width:120px; height:120px; border-radius:50%; object-fit:cover; border: 2px solid #ccc;" />
+    </div>
+    <p style="text-align:center; font-weight:bold;">Admin</p>
+    """,
+    unsafe_allow_html=True
+)
+
 st.sidebar.header("Options")
 
 # Language Selector
